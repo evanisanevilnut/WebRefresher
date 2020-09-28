@@ -2,45 +2,66 @@
 <html>
 
 <head>
-    <title>Learning HTML</title>
+    <title>HTML Forms</title>
 </head>
 
 <body>
 
-    <div>
-        <p><strong>Hello, World!</strong></p>
-        <p>My first web page</p>
-    </div>
+    <h1>HTML Forms</h1>
 
-    <a href="https://www.google.ca">Go to Google Canada</a>
-    <a href=""></a>
+    <form>
+        <label for="username">Enter username:</label>
+        <input type="text" id="username" name="username" placeholder="Username">
+        <br><br>
+
+        <label for="email">Enter email:</label>
+        <input type="email" id="email" name="email" placeholder="Your email">
+        <br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" name="password" placeholder="Choose a password">
+        <br><br>
+
+        <p>Gender</p>
+        <input type="radio" name="gender" value="male">Male <br>
+        <input type="radio" name="gender" value="male">Female <br>
+        <input type="radio" name="gender" value="male">Other
+        <br><br>
+
+        <P>Select your age:</P>
+        <input type="radio" name="age" value="0-25" id="option-1">
+        <label for="option-1">0-25</label> <br>
+        <input type="radio" name="age" value="26-50" id="option-2">
+        <label for="option-1">26-50</label> <br>
+        <input type="radio" name="age" value="51+" id="option-3">
+        <label for="option-1">51+</label>
+        <br><br>
 
 
-    <div>
-        <h1>Heading 1</h1>
-        <h2>Heading 2</h2>
-        <h3>Heading 3</h3>
-        <h4>Heading 4</h4>
-        <h5>Heading 5</h5>
-        <h6>Heading 6</h6>
-    </div>
+        <label for="security question">Security Question:</label>
+        <select name="security question" id="quesion">
+            <option value="q1">What colour are your favourite pair of socks?</option>
+            <option value="q2">What is your favourite place on earth?</option>
+            <option value="q3">Who is your favourite singer?</option>
+        </select>
 
-    <div>
-        <ol>
-            <li>Yoshi</li>
-            <li>Luigi</li>
-            <li>Toad</li>
-        </ol>
-    </div>
+        <br><br>
 
-    <span>I am a (br)<br> span tag</span>
+        <label for="security answer">Security question answer:</label>
+        <input type="text" name="security answer" id="answer">
 
-    <p style="color: blueviolet;
-    padding-left: 20px;">Individually styled CSS</p>
+        <br><br>
 
-    <img src="beach-shore.jpg" alt="picture of me looking into the ocean">
+        <label for="bio">Your bio:</label> <br>
+        <textarea name="bio" id="bio" cols="30" rows="10" placeholder="Enter your bio..."></textarea>
 
-    
+        <br><br>
+
+        <input type="submit" value="Submit the form">
+
+    </form>
+
+
 
 
 </body>
